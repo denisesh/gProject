@@ -1,6 +1,17 @@
 source 'https://rubygems.org'
 
+group :production do
+  gem "rails_12factor"
+end
 
+group :development do
+  gem "better_errors"
+  gem "binding_of_caller"
+  gem "quiet_assets"
+end
+
+
+gem 'bootstrap-sass', '~> 3.3.1'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.7'
 # Use postgresql as the database for Active Record
@@ -37,4 +48,3 @@ gem 'spring',        group: :development
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
-
